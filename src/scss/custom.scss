@@ -6,12 +6,32 @@
 // Your customize CSS
 
 body{
-    
+    position:relative;
 
 }
 .bg-blue{
-    background-color:#007bff;
+    background-color:#009CD7;
     min-height: 8rem;
+}
+.logopane {
+    display: block;
+   
+    position: relative;
+}
+.logopane a {
+    font-size: 2rem;
+    position: relative;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.logopane .sub-title{
+    font-size: 1rem;
+    display: block;
+    color: #fff;
+
 }
 .navbar-nav li:hover > ul.dropdown-menu {
     display: block;
@@ -31,15 +51,72 @@ body{
     float: left;
     left: -5px;
 }
-.container.marketing {
-    top: 8rem;
+.container-fluid.marketing {
+    top: 5rem;
     position: relative;
     display: inline-flex;
+    padding: 2rem
 }
-
-footer {
+div#poll-list-table_wrapper {
+    margin: 2rem 0;
+}
+.footer {
     position: fixed;
-    height: 100px;
+    left: 0;
     bottom: 0;
     width: 100%;
+   
+    color: #909090;
+    text-align: center;
+}
+div.container {
+    width: 80%;
+}
+.submitted-survey{
+    background-color:#009CD7;
+    min-height: 260px;
+    vertical-align: middle;
+    padding: 4rem 0 0 0;
+
+}
+.submitted-survey .modal-body{
+    color:#fff;
+    text-align: center;
+    
+  }
+  .submitted-survey .modal-body p{
+  font-weight: bold;
+  }
+
+  .inset {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow:
+      inset 0 0 0 2px rgba(255,255,255,0.6), 
+      0 1px 1px rgba(0,0,0,0.1);
+    background-color: transparent !important;
+    z-index: 999;
+  }
+  
+  .inset img {
+    border-radius: inherit;
+    width: inherit;
+    height: inherit;
+    display: block;
+    position: relative;
+    z-index: 998;
+  }
+  .create-btn-row{
+      padding: 0 2rem
+
+  }
+
+  td.highlight {
+    background-color: #CEFFE1!important;
+}
+
+div#poll-list-table_wrapper  thead {
+    background: #D9EEF7;
+    color: #4f9cdb;
 }

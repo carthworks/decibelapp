@@ -1,0 +1,98 @@
+@charset "utf-8";
+input[type="submit"], input[type="button"], input[type="text"], input[type="password"], textarea, select{-webkit-border-radius:0;-webkit-appearance:none;}
+a[href^=tel]{text-decoration:inherit;color:inherit;}
+
+/*------------------------------------------------------------------*/ 
+/*	MEDIA QUERIES (FOR DEVICES)
+/*------------------------------------------------------------------*/
+
+/* Medium Layout: 1367px. */
+
+@media only screen and (min-width: 1611px)  {
+    .children-components{
+          background: tomato;
+    }
+  
+}
+
+@media only screen and (min-width: 1368px) and (max-width: 1610px) {
+    .children-components{
+          background: wheat;
+    }
+  
+}
+
+/* Medium Monitor: 1367px. */
+@media only screen and (min-width: 1201px) and (max-width: 1367px) {
+     .children-components{
+        background:  #8BC34A;
+  }
+ 
+}
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .children-components{
+        background:  #03a9f4;
+  }
+     img.login-logo-ai3 { width: 33%;} 
+     span.tile-icon {
+        position: absolute;
+        top: -1.8rem !important;
+        right: 0.7rem !important;
+       
+    }
+    h5.card-title {
+        font-size: 0.8rem !important; }
+    p.card-text {
+            font-size: 0.75rem;}
+            .all-tiles {
+                position: relative;
+                /* background: black; */
+                padding-left: 2.7rem;
+                padding-right: 0;
+                line-height: 1.5;
+            }
+            .tiles-wrap h2 {
+                font-size: 0.9rem;
+            }
+            table.table.deviceinfo tr td {
+                padding: 0;
+                margin: 0;
+            }
+            .vp-footer {
+                         bottom: 27% !important;
+               
+                
+            }
+  
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+ 
+ 
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+ 
+}
+
+/* Small Mobile Layout: 480px. */
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+
+}
+
+/*big from small mobile, small from wide mobile*/
+@media only screen and (min-width: 380px) and (max-width: 480px) {
+ 
+}
+
+/* 1024x576 small
+
+1920x1080 large */

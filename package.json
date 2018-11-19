@@ -2,7 +2,6 @@
   "name": "decibleapp",
   "license": "MIT",
   "author": "cartthworks",
-  "homepage": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/carthworks/decibelapp/tree/master"
@@ -26,7 +25,8 @@
     "datatables.net-responsive-bs4": "^2.2.3",
     "datatables.net-select-bs4": "^1.2.7",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.4"
+    "popper.js": "^1.14.4",
+    "typeface-open-sans": "0.0.54"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",

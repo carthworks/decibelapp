@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -7,12 +8,20 @@
   <meta name="author" content="" />
 
   <title>Poll Sun Nov 18 19:12:07 IST 2018</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+
+
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top  bg-blue">
-      <a class="navbar-brand" href="#">Top polls</a>
-      <span class="sub-title">Voicesurvay as serices</span>
+      <div class="logopane">
+        <a class="navbar-brand" href="#">Top Polls</a>
+        <span class="sub-title">Voice Survey as a Service - Top Poll</span>
+      </div>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,10 +42,20 @@
             </li> -->
         </ul>
 
+        <ul class="nav navbar-nav navbar-right d-none">
+          <li>
+            <div class="inset">
+              <img src="http://rs775.pbsrc.com/albums/yy35/PhoenyxStar/link-1.jpg~c200">
+            </div>
+          </li>
+        </ul>
         <div class="profile mt-2 mt-md-0">
 
           <a href="#" class="dropdown-toggle profile-image">
-            <img src="http://placehold.it/30x30" class="img-circle special-img"> Test <b class="caret"></b></a>
+            <div class="inset">
+              <img src="http://rs775.pbsrc.com/albums/yy35/PhoenyxStar/link-1.jpg~c200" class="img-circle special-img">
+            </div>Test <b class="caret"></b>
+          </a>
           <ul class="dropdown-menu">
             <li><a href="#"><i class="fa fa-cog"></i> Account</a></li>
             <li class="divider"></li>
@@ -57,36 +76,64 @@
   </header>
   <main role="main">
 
-    <div class="container marketing">
+    <div class="container-fluid marketing">
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-12">
-            <button class="btn btn-secondary" href="#" role="button">Create Survey &raquo;</butto>
+        <div class="col-lg-12 create-btn-row">
+          <button class="btn btn-warning" href="#" role="button" id="createSurvey">Create new survey </button>
+          <!-- Trigger the modal with a button -->
+          <a href="#Modal" class="btn btn-info ">Submitted popup</a>
         </div>
         <!-- /.col-lg-4 -->
         <div class="col-lg-12">
-         table
+          <table id="poll-list-table" class=" table  hover order-column dt-responsive nowrap" style="width:100% !important">
+          </table>
+
         </div>
         <!-- /.col-lg-4 -->
-       
+
       </div>
       <!-- /.row -->
 
     </div>
     <!-- /.container -->
 
-  
+
   </main>
 
-    <!-- FOOTER -->
-    <footer class="fixed-bottom"></footer>
-        <!-- <footer class="navbar navbar-fixed-bottom bg-info container-fluid"> -->
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>
-        &copy; 2017-2018 decibelapp.com &middot;
-        <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a>ss -->
-      </p>
-    </footer>
+  <!-- Modal -->
+  <div id="Modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content submitted-survey">
+        <div class="modal-header d-none">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body">
+          <h1>Well Done!</h1>
+          <p>Your survey has been submitted for approval!.</p>
+        </div>
+        <div class="modal-footer d-none">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="fixed-bottom0 footer">
+    <!-- <footer class="navbar navbar-fixed-bottom bg-info container-fluid"> -->
+    <!-- <p class="float-right"><a href="#">Back to top</a></p> -->
+    <hr />
+    <p>
+      &copy; 2017-2018 - decibelapp.com
+      <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a>ss -->
+    </p>
+  </footer>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 </body>
 
 </html>
