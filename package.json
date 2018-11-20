@@ -24,6 +24,7 @@
     "datatables.net-fixedheader-bs4": "^3.1.5",
     "datatables.net-responsive-bs4": "^2.2.3",
     "datatables.net-select-bs4": "^1.2.7",
+    "glyphicons": "^0.2.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.4",
     "typeface-open-sans": "0.0.54"

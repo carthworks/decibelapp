@@ -124,6 +124,11 @@ $(document).ready(function() {
   ];
 
   $(document).ready(function() {
+    $('#survey-list').show();
+    $('#stepper-list').hide();
+    $('#questions-list').hide();
+    $('#preview-list').hide();
+
     $('#poll-list-table').DataTable({
       data: dataSet,
       responsive: true,
@@ -176,5 +181,35 @@ $('a[href$="#Modal"]').on('click', function() {
 
 $('#createSurvey').on('click', function($event) {
   console.log($event);
-  alert('create Survey');
+  $('#survey-list').hide();
+  $('#stepper-list').show();
+  $('#questions-list').hide();
+  $('#preview-list').hide();
+  // alert('create Survey');
+});
+
+// action 01
+
+$('#action01_save').on('click', function() {
+  alert('#action01_save');
+});
+
+$('#action01_next').on('click', function() {
+  $('#survey-list').hide();
+  $('#stepper-list').hide();
+  $('#questions-list').show();
+  $('#preview-list').hide();
+});
+
+// action 02
+
+$('#action02_save').on('click', function() {
+  alert('#action01_save');
+});
+
+$('#action02_next').on('click', function() {
+  $('#survey-list').hide();
+  $('#stepper-list').hide();
+  $('#questions-list').hide();
+  $('#preview-list').show();
 });

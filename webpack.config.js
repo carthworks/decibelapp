@@ -86,7 +86,7 @@ const config = {
       minify: !IS_DEV && {
         collapseWhitespace: true,
         preserveLineBreaks: true,
-        removeComments: true,
+        removeComments: false,
       },
     }),
     new MiniCssExtractPlugin({

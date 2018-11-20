@@ -1,4 +1,6 @@
-@import './carousel.css';
+
+@import '../../node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.css';
+@import './step.css';
 
 
 
@@ -6,7 +8,7 @@
 // Your customize CSS
 
 body{
-    position:relative;
+    // position:relative;
 
 }
 .bg-blue{
@@ -52,10 +54,8 @@ body{
     left: -5px;
 }
 .container-fluid.marketing {
-    top: 5rem;
+    top: 9rem;
     position: relative;
-    display: inline-flex;
-    padding: 2rem
 }
 div#poll-list-table_wrapper {
     margin: 2rem 0;
@@ -69,9 +69,9 @@ div#poll-list-table_wrapper {
     color: #909090;
     text-align: center;
 }
-div.container {
-    width: 80%;
-}
+// div.container {
+//     width: 80%;
+// }
 .submitted-survey{
     background-color:#009CD7;
     min-height: 260px;
@@ -123,22 +123,67 @@ div#poll-list-table_wrapper  thead {
 
 // Stepper flow
 
+section.stepper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin: 2rem 0;
+    text-align: center;
+}
+.formwrapper{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
 
-.ssl-container {float:right;}
-.ssl {display:block;float:right;font-size:24px;background: #EFEFEF;padding: 14px;border-radius: 35px;}
-.ssl-text {display:block;float:right;padding:10px 10px 0 10px;color:#555;text-align:center;}
-.step {background:#eee;font-size:1em;color:#ccc;padding:15px;font-size:1.25em;}
-.step.active {color:#3C763D;}
-.step .caret {position:absolute;margin:0;color:#eee;opacity:1.0;}
-.step .caret.right {right:1px;top:0px;border-top:27px solid transparent;border-bottom:28px solid transparent;border-left:30px solid;}
-.step .caret.bottom {bottom:-15px;left:35%;border-top:15px solid;border-right:50px solid transparent;border-left:50px solid transparent;}
-@media(max-width:991px) {
-  .step {text-align:center;margin-top:20px;height:80px;}
-  .step .caret.right {top:20px;border-top:40px solid transparent;border-bottom:40px solid transparent;}
+.action01{
+    position: relative;
+    /* display: block; */
+    /* margin: 0 auto; */
+    /* width: 100%; */
+    /* background: red; */
+    text-align: center;
 }
-@media(max-width:767px) {
-  .step {height:auto;}
-  .ssl-container {float:none;margin:0 auto;width:220px;}
+
+.action-pane {
+    text-align: center;
+    margin: 2rem 0rem;
 }
-@media(min-width:768px) {
-  .step {margin-right:20px;}}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+  }
+  .btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+  }
+
+  .box {
+    // background-color: grey;
+    /* padding: 15px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    // margin-top: 9rem;
+    text-align: center;
+  }
+
+  ol.cd-breadcrumb.triangle {
+    text-align: center;
+    position: relative;
+    /* margin: 0 auto; */
+    padding: 0 0 0 8rem !important;
+}
