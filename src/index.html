@@ -82,7 +82,7 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-12 create-btn-row">
-          <button class="btn btn-warning" href="#" role="button" id="createSurvey">Create new survey </button>
+          <button class="btn btn-warning btn-lg"  role="button" id="createSurvey">Create new survey </button>
           <!-- Trigger the modal with a button -->
           <a href="#Modal" class="btn btn-info  d-none ">Submitted popup</a>
         </div>
@@ -280,7 +280,16 @@
           <div class="col-md-12 h-100 w-100 text-center qBody">
             <div class="row content-box">
               <div class="col-md-4">
-                  regin-date-list
+                  <div class="form-group">
+                      <label for="region">Region:</label>
+                      <span class="badge badge-pill badge-secondary">USA</span>,<span class="badge badge-pill badge-secondary">India</span>
+                      <input type="text" class="form-control form-control-md col-md-6" id="region" placeholder="">
+                    </div>
+                    
+                    <div class="form-group ">
+                        <label for="sDate">Start Date: <span class="star"> *</span></label>
+                        <input type="calender" class="form-control form-control-md col-md-6" id="sDate" placeholder="sDate">
+                      </div>
               </div>
               <div class="col-md-8">
                 calender

@@ -18,6 +18,9 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
+    //   loaders: [
+    //     { test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, loader: "file" }
+    // ],
     rules: [
       {
         test: /\.js$/,
@@ -77,13 +80,13 @@ const config = {
     }),
     new CopyWebpackPlugin([
       {
-        from: './public',
-        to: 'public',
+        from: './img',
+        to: 'img',
       },
     ]),
     new HtmlWebPackPlugin({
       template: './src/index.html',
-      favicon: './public/icon.ico',
+      favicon: './img/icon.ico',
       minify: !IS_DEV && {
         collapseWhitespace: true,
         preserveLineBreaks: true,
