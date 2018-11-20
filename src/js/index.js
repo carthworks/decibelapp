@@ -29,6 +29,7 @@ $('.dropdown').on('hidden.bs.dropdown', function() {
 
 $(document).ready(function() {
   // $('#poll-list-table').DataTable();
+  $('#userName').append('UDHAY');
 
   var dataSet = [
     [
@@ -128,6 +129,7 @@ $(document).ready(function() {
     $('#stepper-list').hide();
     $('#questions-list').hide();
     $('#preview-list').hide();
+    $('#region-date-list').hide();
 
     $('#poll-list-table').DataTable({
       data: dataSet,
@@ -165,13 +167,6 @@ $(document).ready(function() {
         },
       ],
     });
-
-    // $('#poll-list-table tbody').on('mouseenter', 'td', function() {
-    //   var colIdx = table.cell(this).index().column;
-
-    //   $(table.cells().nodes()).removeClass('highlight');
-    //   $(table.column(colIdx).nodes()).addClass('highlight');
-    // });
   });
 });
 
@@ -185,6 +180,7 @@ $('#createSurvey').on('click', function($event) {
   $('#stepper-list').show();
   $('#questions-list').hide();
   $('#preview-list').hide();
+  $('#region-date-list').hide();
   // alert('create Survey');
 });
 
@@ -199,6 +195,7 @@ $('#action01_next').on('click', function() {
   $('#stepper-list').hide();
   $('#questions-list').show();
   $('#preview-list').hide();
+  $('#region-date-list').hide();
 });
 
 // action 02
@@ -212,4 +209,32 @@ $('#action02_next').on('click', function() {
   $('#stepper-list').hide();
   $('#questions-list').hide();
   $('#preview-list').show();
+  $('#region-date-list').hide();
+});
+
+// action 03
+
+$('#action03_save').on('click', function() {
+  alert('#action01_save');
+});
+
+$('#action03_next').on('click', function() {
+  $('#survey-list').hide();
+  $('#stepper-list').hide();
+  $('#questions-list').hide();
+  $('#preview-list').show();
+  $('#region-date-list').hide();
+});
+// action 04
+
+$('#action04_save').on('click', function() {
+  alert('#action04_save');
+});
+
+$('#action03_next').on('click', function() {
+  $('#survey-list').hide();
+  $('#stepper-list').hide();
+  $('#questions-list').hide();
+  $('#preview-list').hide();
+  $('#region-date-list').show();
 });

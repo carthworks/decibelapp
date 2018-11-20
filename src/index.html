@@ -47,34 +47,31 @@
             </li> -->
         </ul>
 
-        <ul class="nav navbar-nav navbar-right d-none">
+        <!-- <ul class="nav navbar-nav navbar-right d-none">
           <li>
             <div class="inset">
               <img src="http://rs775.pbsrc.com/albums/yy35/PhoenyxStar/link-1.jpg~c200">
             </div>
           </li>
-        </ul>
-        <div class="profile mt-2 mt-md-0">
+        </ul> -->
+        <div class="profile mt-2 mt-md-0 mr-5">
 
-          <a href="#" class="dropdown-toggle profile-image">
-            <div class="inset">
-              <img src="http://rs775.pbsrc.com/albums/yy35/PhoenyxStar/link-1.jpg~c200" class="img-circle special-img">
-            </div>Test <b class="caret"></b>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#"><i class="fa fa-cog"></i> Account</a></li>
-            <li class="divider"></li>
-            <li><a href="#"><i class="fa fa-sign-out"></i> Sign-out</a>
+          <div class="dropdown">
+            <button type="button" class="btn btn-primary-outline dropdown-toggle" style="background-color:transparent"
+              data-toggle="dropdown">
+              <div class="inset"> <img src="./img/user.jpg" class="img-circle special-img">
+              </div> <span id="userName"></span> <b class="caret"></b>
+            </button>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">FAQ</a>
+              <a class="dropdown-item" href="#">Support </a>
+              <a class="dropdown-item" href="#">Signout</a>
+            </div>
+          </div>
+
         </div>
-        <!-- <input
-              class="form-control mr-sm-2"
-              type="text" d-none
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button> -->
+
 
       </div>
     </nav>
@@ -107,8 +104,9 @@
     <div class="container-fluid marketing" id="stepper-list">
 
       <div class="row">
-        <div class="col-lg-12 create-btn-row">
-          <section class="stepper">
+
+        <div class="col-md-12 h-100 w-100">
+          <div class="box h-100 d-flex justify-content-center flex-column">
             <nav>
               <ol class="cd-breadcrumb triangle ">
                 <li class="current"><a href="#0">Your Survey details</a></li>
@@ -117,54 +115,55 @@
                 <!-- <li><em>Project</em></li> -->
               </ol>
             </nav>
+          </div>
 
-            <div class="formwrapper">
-              <form action="/action_page.php">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="leftForm ">
-                      <div class="form-group ">
-                        <label for="sName">Survey Name: <span class="star"> *</span></label>
-                        <input type="text" class="form-control form-control-md col-md-6" id="sName" placeholder="Unique and Meaningfull for you">
-                      </div>
-                      <div class="form-group">
-                        <label for="description">Survey description:</label>
-                        <input type="text" class="form-control form-control-md col-md-6" id="description" placeholder="reason for the survey meaningfull for you">
-                      </div>
-                      <!-- <div class="form-group form-check">
+
+        </div>
+        <div class="col-md-12 h-100 w-100 text-center  qBody">
+          <div class="formwrapper">
+            <form action="/action_page.php">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="leftForm ">
+                    <div class="form-group ">
+                      <label for="sName">Survey Name: <span class="star"> *</span></label>
+                      <input type="text" class="form-control form-control-md col-md-6" id="sName" placeholder="Unique and Meaningfull for you">
+                    </div>
+                    <div class="form-group">
+                      <label for="description">Survey description:</label>
+                      <input type="text" class="form-control form-control-md col-md-6" id="description" placeholder="reason for the survey meaningfull for you">
+                    </div>
+                    <!-- <div class="form-group form-check">
                             <label class="form-check-label">
                               <input class="form-check-input" type="checkbox"> Remember me
                             </label>
                           </div> -->
-                      <div class="form-group">
-                        <label for="region">Region:</label>
-                        <span class="badge badge-pill badge-secondary">USA</span>,<span class="badge badge-pill badge-secondary">India</span>
-                        <input type="text" class="form-control form-control-md col-md-6" id="region" placeholder="">
-                      </div>
-
-                    </div>
-
-
-
-                  </div>
-                  <div class="col-md-6">
-
                     <div class="form-group">
-                      <label for="welcome">Your Welcome message <span class="star"> *</span></label>
-                      <input type="text" class="form-control form-control-md col-md-6" id="welcome" placeholder="Greeting message to your customer">
+                      <label for="region">Region:</label>
+                      <span class="badge badge-pill badge-secondary">USA</span>,<span class="badge badge-pill badge-secondary">India</span>
+                      <input type="text" class="form-control form-control-md col-md-6" id="region" placeholder="">
                     </div>
-                    <div class="form-group">
-                      <label for="thankyoumsg">Thank yo message <span class="star"> *</span></label>
-                      <input type="text" class="form-control form-control-md col-md-6" id="thankyoumsg" placeholder="Thanking message to your customer after polling">
-                    </div>
-                  </div>
-                  <div class="col-md-12 action-pane action01">
-                    <button type="button" class="btn btn-info btn-lg" id="action01_save">Save for later</button> &nbsp;
-                    <button type="button" class="btn btn-primary btn-lg" id="action01_next">Next</button>
+
                   </div>
                 </div>
-              </form>
-            </div>
+                <div class="col-md-6">
+
+                  <div class="form-group">
+                    <label for="welcome">Your Welcome message <span class="star"> *</span></label>
+                    <input type="text" class="form-control form-control-md col-md-6" id="welcome" placeholder="Greeting message to your customer">
+                  </div>
+                  <div class="form-group">
+                    <label for="thankyoumsg">Thank yo message <span class="star"> *</span></label>
+                    <input type="text" class="form-control form-control-md col-md-6" id="thankyoumsg" placeholder="Thanking message to your customer after polling">
+                  </div>
+                </div>
+                <div class="col-md-12 action-pane action01">
+                  <button type="button" class="btn btn-info btn-lg" id="action01_save">Save for later</button> &nbsp;
+                  <button type="button" class="btn btn-primary btn-lg nxt-btn" id="action01_next">Next</button>
+                </div>
+              </div>
+            </form>
+          </div>
           </section>
 
 
@@ -176,66 +175,65 @@
 
     <div class="container-fluid marketing" id="questions-list">
       <div class="row">
-        <div class="col-md-12">
-
-          <section class="stepper">
+        <div class="col-md-12 h-100 w-100">
+          <div class="box h-100 d-flex justify-content-center flex-column">
             <nav>
               <ol class="cd-breadcrumb triangle ">
-                <li><a href="#0">Your Survey details</a></li>
-                <li class="current"><a href="#0">Your Questions</a></li>
+                <li class="current"><a href="#0">Your Survey details</a></li>
+                <li><a href="#0">Your Questions</a></li>
                 <li><em>Region and date</em></li>
                 <!-- <li><em>Project</em></li> -->
               </ol>
             </nav>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <label for=""> Are you interestedd in cricket?</label><br /><br />
-                <div class="form-check-inline">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value="">Yes
-                  </label>
-                </div>
-                <div class="form-check-inline">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value="">No
-                  </label>
-                </div>
-                <br /><br />
-                <label for=""> How often you workout? </label><br /><br />
-                <div class="form-check-inline">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value="">Daily
-                  </label>
-                </div>
-                <div class="form-check-inline">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value="">2 /3 days
-                  </label>
-                </div>
-                <div class="form-check-inline disabled">
-                  <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" value="">Week days
-                  </label>
-                </div>
-
-              </div>
-              <div class="col-md-12 text-center ">
-                <button type="button" class="btn btn-info btn-circle btn-lg">
-                  <!-- <i class="glyphicon glyphicon-ok"></i> -->
-                  <i class="fa fa-arrows" style="font-size:24px"></i>
-                </button>
+          </div>
 
 
-
-              </div>
-              <div class="col-md-12 action-pane action02"> <br /><br />
-                <button type="button" class="btn btn-info btn-lg " id="action02_save">Save for later</button> &nbsp;
-                <button type="button" class="btn btn-primary btn-lg " id="action02_next">Next</button>
-              </div>
-            </div>
-
-          </section>
         </div>
+        <div class="col-md-12 h-100 w-100 text-center  qBody">
+          <label for=""> Are you interestedd in cricket?</label><br /><br />
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" value="">Yes
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" value="">No
+            </label>
+          </div>
+          <br /><br />
+          <label for=""> How often you workout? </label><br /><br />
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" value="">Daily
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" value="">2 /3 days
+            </label>
+          </div>
+          <div class="form-check-inline disabled">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" value="">Week days
+            </label>
+          </div>
+          <!-- <i class="glyphicon glyphicon-ok"></i> -->
+          <i class="fa fa-arrows" style="font-size:24px"></i>
+          </button>
+        </div>
+        <div class="col-md-12 h-100 w-100">
+          <div class="box h-100 d-flex justify-content-center flex-column">
+            <button type="button" class="btn btn-info btn-circle btn-lg">
+
+          </div>
+        </div>
+
+        <div class="col-md-12 h-100 w-100 action-pane action02">
+          <button type="button" class="btn btn-info btn-lg " id="action02_save">Save for later</button> &nbsp;
+          <button type="button" class="btn btn-primary btn-lg nxt-btn" id="action02_next">Next</button>
+        </div>
+
       </div>
     </div>
 
@@ -244,29 +242,59 @@
       <div class="row">
         <div class="col-md-12 h-100 w-100">
           <div class="box h-100 d-flex justify-content-center flex-column">
-              <nav>
-                  <ol class="cd-breadcrumb triangle ">
-                    <li class="current"><a href="#0">Your Survey details</a></li>
-                    <li><a href="#0">Your Questions</a></li>
-                    <li><em>Region and date</em></li>
-                    <!-- <li><em>Project</em></li> -->
-                  </ol>
-                </nav>
+            <nav>
+              <ol class="cd-breadcrumb triangle ">
+                <li class="current"><a href="#0">Your Survey details</a></li>
+                <li><a href="#0">Your Questions</a></li>
+                <li><em>Region and date</em></li>
+                <!-- <li><em>Project</em></li> -->
+              </ol>
+            </nav>
           </div>
-    
+        </div>
+        <div class="col-md-12 h-100 w-100 text-center qBody">
+          preview-list
+        </div>
+        <div class="col-md-12 h-100 w-100 action-pane action03">
+          <button type="button" class="btn btn-info btn-lg" id="action03_save">Save for later</button> &nbsp;
+          <button type="button" class="btn btn-primary btn-lg nxt-btn" id="action03_next">Next</button>
 
         </div>
-        <div class="col-md-12 h-100 w-100 text-center">
-           preview-list
-
-        </div>
-        <div class="col-md-12 h-100 w-100 action-pane action02">
-            <button type="button" class="btn btn-info btn-lg" id="action02_save">Save for later</button> &nbsp;
-            <button type="button" class="btn btn-primary btn-lg" id="action02_next">Next</button>
- 
-         </div>
       </div>
     </div>
+
+    <div class="container-fluid marketing" id="region-date-list">
+        <div class="row">
+          <div class="col-md-12 h-100 w-100">
+            <div class="box h-100 d-flex justify-content-center flex-column">
+              <nav>
+                <ol class="cd-breadcrumb triangle ">
+                  <li ><a href="#0">Your Survey details</a></li>
+                  <li><a href="#0">Your Questions</a></li>
+                  <li class="current"><em>Region and date</em></li>
+                  <!-- <li><em>Project</em></li> -->
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="col-md-12 h-100 w-100 text-center qBody">
+            <div class="row content-box">
+              <div class="col-md-4">
+                  regin-date-list
+              </div>
+              <div class="col-md-8">
+                calender
+              </div>
+            </div>
+              
+          </div>
+          <div class="col-md-12 h-100 w-100 action-pane action04">
+            <button type="button" class="btn btn-info btn-lg" id="action04_save">Save for later</button> &nbsp;
+            <button type="button" class="btn btn-primary btn-lg nxt-btn" id="action04_next">Next</button>
+  
+          </div>
+        </div>
+      </div>
 
   </main>
 
@@ -294,12 +322,9 @@
 
   <!-- FOOTER -->
   <footer class="fixed-bottom0 footer">
-    <!-- <footer class="navbar navbar-fixed-bottom bg-info container-fluid"> -->
-    <!-- <p class="float-right"><a href="#">Back to top</a></p> -->
     <hr />
     <p>
       &copy; 2017-2018 - decibelapp.com
-      <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a>ss -->
     </p>
   </footer>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>

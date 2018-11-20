@@ -9,6 +9,8 @@
 
 body{
     // position:relative;
+    font-size: 1.3rem;
+    color:#777777;
 
 }
 .bg-blue{
@@ -17,8 +19,8 @@ body{
 }
 .logopane {
     display: block;
-   
     position: relative;
+    padding: 0 0 0 2rem;
 }
 .logopane a {
     font-size: 2rem;
@@ -186,4 +188,47 @@ section.stepper {
     position: relative;
     /* margin: 0 auto; */
     padding: 0 0 0 8rem !important;
+}
+
+.qBody{
+    min-height: 16rem;
+    height:auto;
+}
+
+button.nxt-btn{
+    width:11rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left !important;
+}
+
+#userName{
+    text-transform: uppercase;
+    color:#fff;
+}
+.dropdown-menu {
+
+    color: #fff !important;
+    text-align: left;
+    list-style: none;
+    background-color: #009cd7;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+}
+
+.dropdown-item {
+
+    color: #ffffff;
+}
+
+.content-box {
+    // background: aqua;
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
 }

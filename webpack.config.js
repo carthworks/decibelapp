@@ -5,6 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
+// const JqueryUICalenderPlugin = require('webpack-jquery-ui');
 
 const IS_DEV = process.env.NODE_ENV === 'dev';
 
