@@ -37,6 +37,17 @@ body{
     color: #fff;
 
 }
+.previousBtn{
+    background-color: #81D0EB;
+    border: 1px solid #81D0EB;
+    color: #fff;
+}
+.nextBtn{
+    background-color: #00A2D8;
+    border: 1px solid #00A2D8;
+    color: #fff;
+
+}
 .navbar-nav li:hover > ul.dropdown-menu {
     display: block;
 }

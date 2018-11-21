@@ -36,6 +36,18 @@ const config = {
         ],
       },
       {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+            },
+          },
+        ],
+      },
+      {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
           {
@@ -51,7 +63,7 @@ const config = {
               bypassOnDebug: true,
               mozjpeg: {
                 progressive: true,
-                quality: 75,
+                quality: 80,
               },
             },
           },
