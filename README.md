@@ -3,7 +3,7 @@
 > Build landing page with **Boostrap** and **jQuery** is so easy.
 
 ## Why ?
- this repo is suitable for simple projects.
+ this repo is suitable for simplejquery  projects.
 
 
 ## Features
@@ -19,7 +19,7 @@ Let's go!
 ```
 $ git clone https://github.com/carthworks/decibelapp.git
 $ cd bootstrap-webpack-jquery-boilerplate
-$ yarn // or npm install
+$  npm install
 ```
 
 ## Development
